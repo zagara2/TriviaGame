@@ -1,7 +1,7 @@
 var numRightAnswers = 0;
 var numWrongAnswers = 0;
 var numUnanswered = 0;
-var seconds = 10;
+var seconds = 120;
 var intervalId;
 
 
@@ -201,7 +201,7 @@ numRightAnswers = 0;
 numWrongAnswers = 0;
 numUnanswered = 0;
 $("#scoreData").empty();
-seconds = 10;//reset amount of time on the timer
+seconds = 120;//reset amount of time on the timer
 populateQuestions();
 // timerStopandReset();
 
