@@ -1,3 +1,136 @@
 /*font-family: 'Margarine', cursive;
 font-family: 'Londrina Solid', cursive;
 font-family: 'Ranchers', cursive;*/
+
+/*html { 
+  background: url("../images/gfwallpaper2flip.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: bottom;
+} 
+*/
+html {
+	background: url("../images/wallpaper4.jpg")
+
+}
+
+#consistentHeader {
+	background-color:white;
+	text-align: center;
+	display: block;
+    margin: 0 auto;
+    margin-left:22%;
+    margin-right:22%;
+    padding:15px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    font-family: 'Margarine', cursive;
+    
+   font-weight:bold;
+    line-height: 150%;
+    font-size:24px;
+}
+
+
+#form-main-container {
+	background-color:white;
+	text-align: center;
+	display: block;
+    margin: 0 auto;
+    margin-left:22%;
+    margin-right:22%;
+    padding:15px;
+    margin-top:15px;
+    padding-bottom:0px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+#scoreData {
+	background-color:white;
+	text-align: center;
+	display: block;
+    margin: 0 auto;
+    margin-left:22%;
+    margin-right:22%;
+    padding:15px;
+    margin-top:20px;
+    padding-bottom:25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+
+}
+
+#submitbuttonholder {
+	padding-bottom:15px;
+}
+
+#bigTitle img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 70%;
+}
+
+/*#startbuttonholder {
+	margin-left:22%;
+    margin-right:22%;
+    margin-top:5%;
+    background-color: white;
+    padding:30px;
+    text-align: center;
+	display: block;
+}*/
+
+#start-button {
+	background-color: #42d0ff;
+	border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    font-family: 'Luckiest Guy', cursive;
+    font-size:60px;
+    color:white;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#form-main-container {
+	font-family: 'Margarine', cursive;
+	font-style: italic;
+}
+
+.questionheading {
+	font-family: 'Margarine', cursive;
+    
+   font-weight:bold;
+   font-size:20px;
+   font-style: normal;
+
+}
+
+.question {
+	padding:20px;
+}
+
+#submit-button {
+	background-color: #42d0ff;
+	border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    font-family: 'Luckiest Guy', cursive;
+    font-size:60px;
+    color:white;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}

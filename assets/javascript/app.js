@@ -3,10 +3,14 @@ var numWrongAnswers = 0;
 var numUnanswered = 0;
 var seconds = 120;
 var intervalId;
+$("#form-main-container").hide();
+$("#scoreData").hide();
 
 
 
 $("#start-button").on("click", function() {
+
+	$("#form-main-container").show();
 
     secondsCounterInterval();
     populateQuestions();
@@ -166,6 +170,10 @@ function totalScoreCalculator() {
 function gameAftermath() {
 	//display score info; empty form divs
 	console.log("game aftermath");
+	$("#scoreData").show();
+	$("#form-main-container").hide();
+	$("#timerdisplay").appendTo("#scoreData");
+	$("#submitbuttonholder").hide();
 	clearInterval(intervalId); //pause timer
 
 
@@ -218,6 +226,11 @@ function gameAftermath() {
 function restart() {
 
 console.log("game restart");
+$("#scoreData").hide();
+	$("#form-main-container").show();
+	
+	$("#timerdisplay").prependTo("#form-main-container");
+	$("#submitbuttonholder").show();
 seconds = 120;//reset amount of time on the timer
 secondsCounterInterval();
 numRightAnswers = 0;
