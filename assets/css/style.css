@@ -174,3 +174,101 @@ p {
 	margin-left:16px;
 	margin-right: 16px;
 }
+
+@media screen and (max-width: 1300px) {
+
+	#restart-button {
+		font-size:50px;
+	}
+
+	#submit-button {
+		font-size:50px;
+	}
+
+	}
+
+@media screen and (max-width: 1100px) {
+
+	#restart-button {
+		font-size:40px;
+	}
+
+	#submit-button {
+		font-size:40px;
+	}
+
+	}
+
+	@media screen and (max-width: 900px) {
+
+	#restart-button {
+		font-size:32px;
+	}
+
+	#submit-button {
+		font-size:32px;
+	}
+
+	}
+
+
+	@media screen and (max-width: 800px) {
+
+	#restart-button {
+		font-size:30px;
+	}
+
+	#submit-button {
+		font-size:30px;
+	}
+
+	}
+
+	@media screen and (max-width: 750px) {
+
+	#restart-button {
+		font-size:20px;
+	}
+
+	#submit-button {
+		font-size:20px;
+	}
+
+	#consistentHeader {
+		font-size:20px;
+	}
+
+	}
+
+	@media screen and (max-width: 550px) {
+
+	#restart-button {
+		font-size:16px;
+	}
+
+	#submit-button {
+		font-size:16px;
+	}
+	
+
+	}
+
+	@media screen and (max-width: 460px) {
+
+	#restart-button {
+		font-size:12px;
+	}
+
+	#submit-button {
+		font-size:15px;
+	}
+
+	#start-button {
+		font-size:30px;
+	}
+
+	#scoreData {
+		font-size:15px;
+	}
+
+	}
