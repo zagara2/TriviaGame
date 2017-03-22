@@ -11,6 +11,26 @@ $("#start-button").on("click", function() {
 
 });
 
+$("#submit-button").on("click", function() {
+
+    gameAftermath();
+
+
+});
+
+$("#restart-button").on("click", function() {
+	numRightAnswers = 0;
+ numWrongAnswers = 0;
+numUnanswered = 0;
+$("#scoreData").empty();
+populateQuestions();
+
+
+    
+
+
+});
+
 function populateQuestions() {
     //fill in divs with question stuff and a submit button; hide/empty start button
     $("#question1").html("<div class = 'questionheading'>Question 1 </div> <br>");
@@ -84,20 +104,20 @@ function populateQuestions() {
     $("#question10").append("<input name='q10' type='radio' value='wrong'/> Wrong Answer 3  ");
 
     $("#submitbuttonholder").append("<br> <br>");
-    $("#submitbuttonholder").append("<input name='submit' type='button' value='Submit Answers!' />");
+    $("#submitbuttonholder").append("<input name='submit' type='button' value='Submit Answers!' id = 'submit-button' />");
 
     $("#startbuttonholder").empty();
 
 
 }
 
-function scoreCalculator() {
+function scoreCalculator(lookupName) {
 
 //loop through each question, check if right, wrong, or unanswered, update variable accordingly
-    for (i = 1; i <= 10; i++) {
+    // for (i = 1; i <= 10; i++) {
 
-        var iToString = i.toString();
-        var lookupName = "q" + iToString;
+        // var iToString = i.toString();
+        // var lookupName = "q" + iToString;
         var currentQuestion = document.getElementsByName(lookupName);
         for (i = 0; i < currentQuestion.length; i++) {
             var isUnanswered = true;
@@ -114,7 +134,7 @@ function scoreCalculator() {
 
             }
 
-            if (i === 3 && !currentQuestion[i].checked) { //if all boxes except the last have been looped through and the last box is not checked
+            if (i === (currentQuestion.length)-1 && !currentQuestion[i].checked) { //if all boxes except the last have been looped through and the last box is not checked
                 if (isUnanswered === true) { //if no answer has been selected yet
                     numUnanswered++;
                 }
@@ -122,7 +142,47 @@ function scoreCalculator() {
             }
 
         }
-    }
+    // }
+}
+
+function totalScoreCalculator() {
+	scoreCalculator("q1");
+	scoreCalculator("q2");
+	scoreCalculator("q3");
+	scoreCalculator("q4");
+	scoreCalculator("q5");
+	scoreCalculator("q6");
+	scoreCalculator("q7");
+	scoreCalculator("q8");
+	scoreCalculator("q9");
+	scoreCalculator("q10");
+
+}
+
+function gameAftermath() {
+	//display score info; empty form divs
+
+
+	totalScoreCalculator();
+	$("#question1").empty();
+	$("#question2").empty();
+	$("#question3").empty();
+	$("#question4").empty();
+	$("#question5").empty();
+	$("#question6").empty();
+	$("#question7").empty();
+	$("#question8").empty();
+	$("#question9").empty();
+	$("#question10").empty();
+	$("#submitbuttonholder").empty();
+
+
+	$("#scoreData").append("All Done!" + "<br>");
+	$("#scoreData").append("Number of correct answers: " + numRightAnswers + "<br>");
+	$("#scoreData").append("Number of incorrect answers: " + numWrongAnswers + "<br>");
+	$("#scoreData").append("Number of unanswered questions: " + numUnanswered + "<br>");
+	$("#scoreData").append("<button type = 'button' id ='restart-button'>Click Me to Try Again!</button>")
+
 }
 
 
