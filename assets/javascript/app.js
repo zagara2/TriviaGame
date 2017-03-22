@@ -1,12 +1,16 @@
 var numRightAnswers = 0;
 var numWrongAnswers = 0;
 var numUnanswered = 0;
+var seconds = 90;
+var intervalId;
 
 
 
 $("#start-button").on("click", function() {
 
+    secondsCounterInterval();
     populateQuestions();
+    
 
 
 });
@@ -162,6 +166,7 @@ function totalScoreCalculator() {
 function gameAftermath() {
 	//display score info; empty form divs
 	console.log("game aftermath");
+	clearInterval(intervalId); //pause timer
 
 
 	totalScoreCalculator();
@@ -196,9 +201,37 @@ numRightAnswers = 0;
 numWrongAnswers = 0;
 numUnanswered = 0;
 $("#scoreData").empty();
+seconds = 90;//reset amount of time on the timer
 populateQuestions();
+// timerStopandReset();
+
+secondsCounterInterval();
 
 }
+
+function secondsCounterDisplay() {
+	//seconds--;
+	$("#timerdisplay").html("Time Remaining: " + seconds + " Seconds");
+	seconds--;
+	if (seconds === 0) {
+		clearInterval(intervalId);
+	}
+
+}
+
+function secondsCounterInterval() {
+	intervalId = setInterval(secondsCounterDisplay, 1000);
+
+}
+
+// function timerStopandReset() {
+
+// clearInterval(intervalId);
+// seconds = 10;
+
+// }
+
+
 
 
 
