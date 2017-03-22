@@ -1,7 +1,7 @@
 var numRightAnswers = 0;
 var numWrongAnswers = 0;
 var numUnanswered = 0;
-var seconds = 90;
+var seconds = 10;
 var intervalId;
 
 
@@ -183,7 +183,7 @@ function gameAftermath() {
 	$("#submitbuttonholder").empty();
 
 
-	$("#scoreData").append("All Done!" + "<br>");
+	// $("#scoreData").append("All Done!" + "<br>");
 	$("#scoreData").append("Number of correct answers: " + numRightAnswers + "<br>");
 	$("#scoreData").append("Number of incorrect answers: " + numWrongAnswers + "<br>");
 	$("#scoreData").append("Number of unanswered questions: " + numUnanswered + "<br><br>");
@@ -201,7 +201,7 @@ numRightAnswers = 0;
 numWrongAnswers = 0;
 numUnanswered = 0;
 $("#scoreData").empty();
-seconds = 90;//reset amount of time on the timer
+seconds = 10;//reset amount of time on the timer
 populateQuestions();
 // timerStopandReset();
 
@@ -212,10 +212,13 @@ secondsCounterInterval();
 function secondsCounterDisplay() {
 	//seconds--;
 	$("#timerdisplay").html("Time Remaining: " + seconds + " Seconds");
-	seconds--;
+	
 	if (seconds === 0) {
-		clearInterval(intervalId);
+		clearInterval(intervalId); //avoid negative numbers being displayed
+		$("#timerdisplay").html("TIME'S UP!");
+		gameAftermath();//go to end screen if out of time
 	}
+	seconds--;
 
 }
 
