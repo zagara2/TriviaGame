@@ -32,6 +32,7 @@ html {
    font-weight:bold;
     line-height: 150%;
     font-size:24px;
+    margin-top:15px;
 }
 
 
@@ -104,7 +105,8 @@ html {
 
 #form-main-container {
 	font-family: 'Margarine', cursive;
-	font-style: italic;
+	margin-bottom:15px;
+	/*font-style: italic;*/
 }
 
 .questionheading {
@@ -133,4 +135,42 @@ html {
     padding-right:20px;
     margin-bottom:20px;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#timerdisplay {
+	font-size: 30px;
+	padding:15px;
+	padding-top:20px;
+	font-weight:bold;
+	font-style: italic;
+}
+
+#scoreData {
+	font-family: 'Margarine', cursive;
+    
+   font-weight:bold;
+   font-size: 24px;
+   margin-bottom:15px;
+
+}
+
+#restart-button {
+	background-color: #42d0ff;
+	border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    font-family: 'Luckiest Guy', cursive;
+    font-size:60px;
+    color:white;
+    padding:10px;
+    margin-top:15px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+p {
+	margin-left:16px;
+	margin-right: 16px;
 }
