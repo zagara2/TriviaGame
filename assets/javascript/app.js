@@ -187,6 +187,27 @@ function gameAftermath() {
 	$("#scoreData").append("Number of correct answers: " + numRightAnswers + "<br>");
 	$("#scoreData").append("Number of incorrect answers: " + numWrongAnswers + "<br>");
 	$("#scoreData").append("Number of unanswered questions: " + numUnanswered + "<br><br>");
+	console.log(numRightAnswers);
+
+	if (numRightAnswers >= 7 && numRightAnswers !=10) {
+		$("#scoreData").append("You sure know your Garfield. <br><br>");
+	}
+
+	else if (numRightAnswers <= 4) {
+		$("#scoreData").append("Must be a case of the Mondays. <br><br>");
+	}
+
+	else if (4<numRightAnswers && numRightAnswers<7) {
+
+		$("#scoreData").append("Could be better, could be worse. <br><br>");
+
+
+	}
+
+	else if (numRightAnswers === 10) {
+	$("#scoreData").append("Lasagna for dinner tonight, baby! <br><br>");
+	}
+
 	$("#scoreData").append("<input onclick='restart()' name='submit' type='button' value='Click Me to Try Again!' id = 'restart-button' />")
 
 }
@@ -197,15 +218,17 @@ function gameAftermath() {
 function restart() {
 
 console.log("game restart");
+seconds = 120;//reset amount of time on the timer
+secondsCounterInterval();
 numRightAnswers = 0;
 numWrongAnswers = 0;
 numUnanswered = 0;
 $("#scoreData").empty();
-seconds = 120;//reset amount of time on the timer
+
 populateQuestions();
 // timerStopandReset();
 
-secondsCounterInterval();
+
 
 }
 
