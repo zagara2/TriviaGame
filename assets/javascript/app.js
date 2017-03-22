@@ -11,25 +11,25 @@ $("#start-button").on("click", function() {
 
 });
 
-$("#submit-button").on("click", function() {
+// $("#submit-button").on("click", function() {
 
-    gameAftermath();
+//     gameAftermath();
 
 
-});
+// });
 
-$("#restart-button").on("click", function() {
-	numRightAnswers = 0;
- numWrongAnswers = 0;
-numUnanswered = 0;
-$("#scoreData").empty();
-populateQuestions();
+// $("#restart-button").on("click", function() {
+// 	numRightAnswers = 0;
+//  numWrongAnswers = 0;
+// numUnanswered = 0;
+// $("#scoreData").empty();
+// populateQuestions();
 
 
     
 
 
-});
+// });
 
 function populateQuestions() {
     //fill in divs with question stuff and a submit button; hide/empty start button
@@ -104,7 +104,7 @@ function populateQuestions() {
     $("#question10").append("<input name='q10' type='radio' value='wrong'/> Wrong Answer 3  ");
 
     $("#submitbuttonholder").append("<br> <br>");
-    $("#submitbuttonholder").append("<input name='submit' type='button' value='Submit Answers!' id = 'submit-button' />");
+    $("#submitbuttonholder").append("<input onclick='gameAftermath()' name='submit' type='button' value='Submit Answers!' id = 'submit-button' />");
 
     $("#startbuttonholder").empty();
 
@@ -161,6 +161,7 @@ function totalScoreCalculator() {
 
 function gameAftermath() {
 	//display score info; empty form divs
+	console.log("game aftermath");
 
 
 	totalScoreCalculator();
@@ -180,11 +181,25 @@ function gameAftermath() {
 	$("#scoreData").append("All Done!" + "<br>");
 	$("#scoreData").append("Number of correct answers: " + numRightAnswers + "<br>");
 	$("#scoreData").append("Number of incorrect answers: " + numWrongAnswers + "<br>");
-	$("#scoreData").append("Number of unanswered questions: " + numUnanswered + "<br>");
-	$("#scoreData").append("<button type = 'button' id ='restart-button'>Click Me to Try Again!</button>")
+	$("#scoreData").append("Number of unanswered questions: " + numUnanswered + "<br><br>");
+	$("#scoreData").append("<input onclick='restart()' name='submit' type='button' value='Click Me to Try Again!' id = 'restart-button' />")
+
+}
+
+// "<br><button type = 'button' id ='restart-button'>Click Me to Try Again!</button>"
+// "<input onclick='gameAftermath()' name='submit' type='button' value='Submit Answers!' id = 'submit-button' />"
+
+function restart() {
+
+console.log("game restart");
+numRightAnswers = 0;
+numWrongAnswers = 0;
+numUnanswered = 0;
+$("#scoreData").empty();
+populateQuestions();
 
 }
 
 
 
-}
+
