@@ -41,75 +41,75 @@ $("#start-button").on("click", function() {
 
 function populateQuestions() {
     //fill in divs with question stuff and a submit button; hide/empty start button
-    $("#question1").html("<div class = 'questionheading'>Question 1 </div> <br>");
-    $("#question1").append("<input name='q1' type='radio' value='right'/> Right Answer  ");
-    $("#question1").append("<input name='q1' type='radio' value='wrong'/> Wrong Answer 1  ");
-    $("#question1").append("<input name='q1' type='radio' value='wrong'/> Wrong Answer 2  ");
-    $("#question1").append("<input name='q1' type='radio' value='wrong'/> Wrong Answer 3  ");
+    $("#question1").html("<div class = 'questionheading'>'Garfield' takes place in what state? </div> <br>");
+    $("#question1").append("<input name='q1' type='radio' value='right'/> Indiana  ");
+    $("#question1").append("<input name='q1' type='radio' value='wrong'/> Wisconsin  ");
+    $("#question1").append("<input name='q1' type='radio' value='wrong'/> New York  ");
+    $("#question1").append("<input name='q1' type='radio' value='wrong'/> Georgia  ");
 
     $("#question2").append("<br>");
-    $("#question2").append("<div class = 'questionheading'>Question 2 </div> <br>");
-    $("#question2").append("<input name='q2' type='radio' value='wrong'/> Wrong Answer 1  ");
-    $("#question2").append("<input name='q2' type='radio' value='wrong'/> Wrong Answer 2  ");
-    $("#question2").append("<input name='q2' type='radio' value='right'/> Right Answer   ");
-    $("#question2").append("<input name='q2' type='radio' value='wrong'/> Wrong Answer 3  ");
+    $("#question2").append("<div class = 'questionheading'>Garfield the cat is named after... </div> <br>");
+    $("#question2").append("<input name='q2' type='radio' value='wrong'/> former president James Garfield  ");
+    $("#question2").append("<input name='q2' type='radio' value='wrong'/> the high school that creator Jim Davis graduated from  ");
+    $("#question2").append("<input name='q2' type='radio' value='right'/> Jim Davis' grandfather   ");
+    $("#question2").append("<input name='q2' type='radio' value='wrong'/> Richard Garfield, creator of Magic: The Gathering  ");
 
     $("#question3").append("<br>");
-    $("#question3").append("<div class = 'questionheading'>Question 3 </div> <br>");
-    $("#question3").append("<input name='q3' type='radio' value='wrong'/> Wrong Answer 1  ");
-    $("#question3").append("<input name='q3' type='radio' value='wrong'/> Wrong Answer 2  ");
-    $("#question3").append("<input name='q3' type='radio' value='right'/> Right Answer   ");
-    $("#question3").append("<input name='q3' type='radio' value='wrong'/> Wrong Answer 3  ");
+    $("#question3").append("<div class = 'questionheading'>What does Jon Arbuckle do for a living? </div> <br>");
+    $("#question3").append("<input name='q3' type='radio' value='wrong'/> advertising  ");
+    $("#question3").append("<input name='q3' type='radio' value='wrong'/> subsititute teacher  ");
+    $("#question3").append("<input name='q3' type='radio' value='right'/> cartoonist   ");
+    $("#question3").append("<input name='q3' type='radio' value='wrong'/> bank teller  ");
 
     $("#question4").append("<br>");
-    $("#question4").append("<div class = 'questionheading'>Question 4 </div> <br>");
-    $("#question4").append("<input name='q4' type='radio' value='wrong'/> Wrong Answer 1  ");
-    $("#question4").append("<input name='q4' type='radio' value='wrong'/> Wrong Answer 2  ");
-    $("#question4").append("<input name='q4' type='radio' value='wrong'/> Wrong Answer 3  ");
-    $("#question4").append("<input name='q4' type='radio' value='right'/> Right Answer  ");
+    $("#question4").append("<div class = 'questionheading'>How many newspapers and journals around the world is 'Garfield' syndicated in? </div> <br>");
+    $("#question4").append("<input name='q4' type='radio' value='wrong'/> 843  ");
+    $("#question4").append("<input name='q4' type='radio' value='wrong'/> 1200  ");
+    $("#question4").append("<input name='q4' type='radio' value='wrong'/> 2269  ");
+    $("#question4").append("<input name='q4' type='radio' value='right'/> 2500  ");
 
     $("#question5").append("<br>");
-    $("#question5").append("<div class = 'questionheading'>Question 5 </div> <br>");
-    $("#question5").append("<input name='q5' type='radio' value='wrong'/> Wrong Answer 1  ");
-    $("#question5").append("<input name='q5' type='radio' value='right'/> Right Answer  ");
-    $("#question5").append("<input name='q5' type='radio' value='wrong'/> Wrong Answer 2   ");
-    $("#question5").append("<input name='q5' type='radio' value='wrong'/> Wrong Answer 3  ");
+    $("#question5").append("<div class = 'questionheading'>What is Garfield called in Sweden? </div> <br>");
+    $("#question5").append("<input name='q5' type='radio' value='wrong'/> Gerbjörn  ");
+    $("#question5").append("<input name='q5' type='radio' value='right'/> Gustav  ");
+    $("#question5").append("<input name='q5' type='radio' value='wrong'/> Gilbert   ");
+    $("#question5").append("<input name='q5' type='radio' value='wrong'/> Gottvald  ");
 
     $("#question6").append("<br>");
-    $("#question6").append("<div class = 'questionheading'>Question 6 </div> <br>");
-    $("#question6").append("<input name='q6' type='radio' value='right'/> Right Answer  ");
-    $("#question6").append("<input name='q6' type='radio' value='wrong'/> Wrong Answer 1  ");
-    $("#question6").append("<input name='q6' type='radio' value='wrong'/> Wrong Answer 2  ");
-    $("#question6").append("<input name='q6' type='radio' value='wrong'/> Wrong Answer 3  ");
+    $("#question6").append("<div class = 'questionheading'>What breed of cat is Garfield? </div> <br>");
+    $("#question6").append("<input name='q6' type='radio' value='right'/> Exotic Shorthair  ");
+    $("#question6").append("<input name='q6' type='radio' value='wrong'/> Maine Coon  ");
+    $("#question6").append("<input name='q6' type='radio' value='wrong'/> Persian  ");
+    $("#question6").append("<input name='q6' type='radio' value='wrong'/> Ragdoll  ");
 
     $("#question7").append("<br>");
-    $("#question7").append("<div class = 'questionheading'>Question 7 </div> <br>");
-    $("#question7").append("<input name='q7' type='radio' value='right'/> Right Answer  ");
-    $("#question7").append("<input name='q7' type='radio' value='wrong'/> Wrong Answer 1  ");
-    $("#question7").append("<input name='q7' type='radio' value='wrong'/> Wrong Answer 2  ");
-    $("#question7").append("<input name='q7' type='radio' value='wrong'/> Wrong Answer 3  ");
+    $("#question7").append("<div class = 'questionheading'>'Garfield' attracted criticism from the media when it made what appeared to be a negative reference to what holiday? </div> <br>");
+    $("#question7").append("<input name='q7' type='radio' value='right'/> Veterans' Day  ");
+    $("#question7").append("<input name='q7' type='radio' value='wrong'/> Christmas  ");
+    $("#question7").append("<input name='q7' type='radio' value='wrong'/> Easter  ");
+    $("#question7").append("<input name='q7' type='radio' value='wrong'/> Earth Day  ");
 
     $("#question8").append("<br>");
-    $("#question8").append("<div class = 'questionheading'>Question 8 </div> <br>");
-    $("#question8").append("<input name='q8' type='radio' value='wrong'/> Wrong Answer 1  ");
-    $("#question8").append("<input name='q8' type='radio' value='right'/> Right Answer  ");
-    $("#question8").append("<input name='q8' type='radio' value='wrong'/> Wrong Answer 2 ");
-    $("#question8").append("<input name='q8' type='radio' value='wrong'/> Wrong Answer 3  ");
+    $("#question8").append("<div class = 'questionheading'>To what city does Garfield frequently try to mail Nermal? </div> <br>");
+    $("#question8").append("<input name='q8' type='radio' value='wrong'/> Timbuktu  ");
+    $("#question8").append("<input name='q8' type='radio' value='right'/> Abu Dhabi  ");
+    $("#question8").append("<input name='q8' type='radio' value='wrong'/> Beijing ");
+    $("#question8").append("<input name='q8' type='radio' value='wrong'/> Kuala Lumpur  ");
 
 
     $("#question9").append("<br>");
-    $("#question9").append("<div class = 'questionheading'>Question 9 </div> <br>");
-    $("#question9").append("<input name='q9' type='radio' value='wrong'/> Wrong Answer 1  ");
-    $("#question9").append("<input name='q9' type='radio' value='wrong'/> Wrong Answer 2  ");
-    $("#question9").append("<input name='q9' type='radio' value='wrong'/> Wrong Answer 3  ");
-    $("#question9").append("<input name='q9' type='radio' value='right'/> Right Answer  ");
+    $("#question9").append("<div class = 'questionheading'>What is Jon's middle initial? </div> <br>");
+    $("#question9").append("<input name='q9' type='radio' value='wrong'/> J  ");
+    $("#question9").append("<input name='q9' type='radio' value='wrong'/> P  ");
+    $("#question9").append("<input name='q9' type='radio' value='right'/> Q  ");
+    $("#question9").append("<input name='q9' type='radio' value='wrong'/> His parents didn't love him enough to give him a middle name  ");
 
     $("#question10").append("<br>");
-    $("#question10").append("<div class = 'questionheading'>Question 10 </div> <br>");
-    $("#question10").append("<input name='q10' type='radio' value='wrong'/> Wrong Answer 1  ");
-    $("#question10").append("<input name='q10' type='radio' value='wrong'/> Wrong Answer 2  ");
-    $("#question10").append("<input name='q10' type='radio' value='right'/> Right Answer   ");
-    $("#question10").append("<input name='q10' type='radio' value='wrong'/> Wrong Answer 3  ");
+    $("#question10").append("<div class = 'questionheading'>Who is Clive? </div> <br>");
+    $("#question10").append("<input name='q10' type='radio' value='wrong'/> A mouse  ");
+    $("#question10").append("<input name='q10' type='radio' value='wrong'/> A spider  ");
+    $("#question10").append("<input name='q10' type='radio' value='right'/> Garfield's imaginary friend  ");
+    $("#question10").append("<input name='q10' type='radio' value='wrong'/> Garfield's romantic rival  ");
 
     $("#submitbuttonholder").append("<br> <br>");
     $("#submitbuttonholder").append("<input onclick='gameAftermath()' name='submit' type='button' value='Submit Answers!' id = 'submit-button' />");
