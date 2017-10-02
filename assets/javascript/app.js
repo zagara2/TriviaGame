@@ -263,6 +263,7 @@ function secondsCounterInterval() {
 
 }
 
+secondsCounterInterval();
 // function timerStopandReset() {
 
 // clearInterval(intervalId);
