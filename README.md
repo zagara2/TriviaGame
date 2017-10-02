@@ -32,9 +32,14 @@ The font size could stand to be made a bit smaller on mobile, but the game is st
 
 When the page is loaded properly, it should look like this:
 
-![Homepage](/assets/images/triviagame2.JPG)
+![Start Screen](/assets/images/startscreen.JPG)
+**Start Screen**
 
-**(top half; the rest of the page is visible if one keeps scrolling.)**
+![In Game Screen](/assets/images/triviagame2.JPG)
+**In-Game Screen (top half; the rest of the page is visible if one keeps scrolling.)**
+
+![End Screen](/assets/images/endscreen.JPG)
+**End Screen**
 
 ## Future Plans for Improvement
 
