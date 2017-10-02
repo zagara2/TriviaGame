@@ -1,4 +1,4 @@
-# Timed Garfield Trivia
+# Garfield Timers Trivia
 
 ## What is it?
 
